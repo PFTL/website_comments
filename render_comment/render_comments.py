@@ -24,18 +24,20 @@ for c in commentsYML:
 
 
 env = Environment(
-    loader=PackageLoader('comments', 'templates'),
+    loader=PackageLoader('render_comment', 'templates'),
     autoescape=select_autoescape(['html', 'xml'])
 )
 
-for entry in comments:
-    comment = comments[entry]
-    template = env.get_template('comment_template.html')
-    rendered_template = template.render(comments=comment)
-    entry_out = os.path.join(output_path, entry)
-    if not os.path.exists(entry_out):
-        os.makedirs(entry_out)
 
-    with open(os.path.join(entry_out, 'comments.html'), 'w') as f:
-        f.write(rendered_template)
+def main():
+    for entry in comments:
+        comment = comments[entry]
+        template = env.get_template('comment_template.html')
+        rendered_template = template.render(comments=comment)
+        entry_out = os.path.join(output_path, entry)
+        if not os.path.exists(entry_out):
+            os.makedirs(entry_out)
+
+        with open(os.path.join(entry_out, 'comments.html'), 'w') as f:
+            f.write(rendered_template)
 

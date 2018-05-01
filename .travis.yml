@@ -8,8 +8,9 @@ sudo: disabled
 
 install:
   - pip install -r requirements.txt
+  - pip install .
 script:
-  - python render_comments.py
+  - render_comments
 
 deploy:
   provider: script
