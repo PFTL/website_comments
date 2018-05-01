@@ -4,10 +4,12 @@ addons:
 language: python
 python:
   - "3.6"
+
 sudo: disabled
 
 install:
   - pip install .
+
 script:
   - render_comments
 

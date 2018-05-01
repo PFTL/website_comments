@@ -2,7 +2,7 @@ import os
 
 import yaml as yaml
 from os.path import isfile, join
-from jinja2 import Environment, PackageLoader, select_autoescape
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 from os import listdir
 
 commentsPath = 'comments_yml'
@@ -24,10 +24,11 @@ for c in commentsYML:
 
 
 env = Environment(
-    loader=PackageLoader('render_comment', 'templates'),
+    loader=FileSystemLoader(os.path.join(os.path.dirname(__file__), 'templates')),
     autoescape=select_autoescape(['html', 'xml'])
 )
-
+print(os.path.dirname(__file__))
+FileSystemLoader(os.path.join(os.path.dirname(__file__), 'templates')).list_templates()
 
 def main():
     for entry in comments:

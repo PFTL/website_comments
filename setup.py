@@ -3,7 +3,8 @@ from setuptools import setup
 setup(
     name='render_comment',
     version='0.1',
-    packages=['render_comment', 'render_comment'],
+    packages=['render_comment'],
+    package_data = {'render_comment': ['templates/*html'],},
     url='https://github.com/PFTL/website_comments',
     license='MIT',
     author='Aquiles Carattino',
