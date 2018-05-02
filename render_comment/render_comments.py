@@ -21,6 +21,7 @@ for c in commentsYML:
 
         comments[data['url']].append({
             'name': data['name'],
+            'website': data['website'] if 'website' in data else None,
             'message': markdown.markdown(data['message']),
             'date': data['date'],
             'avatar': 'https://www.gravatar.com/avatar/'+data['email']+'?s=64',
