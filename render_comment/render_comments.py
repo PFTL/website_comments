@@ -1,9 +1,11 @@
+import datetime
 import os
 
 import yaml as yaml
 from os.path import isfile, join
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from os import listdir
+import markdown
 
 commentsPath = 'comments_yml'
 output_path = 'comments'
@@ -19,7 +21,9 @@ for c in commentsYML:
 
         comments[data['url']].append({
             'name': data['name'],
-            'message': data['message'],
+            'message': markdown.markdown(data['message']),
+            'date': data['date'],
+            'avatar': 'https://www.gravatar.com/avatar/'+data['email']+'?s=64',
         })
 
 
@@ -27,8 +31,13 @@ env = Environment(
     loader=FileSystemLoader(os.path.join(os.path.dirname(__file__), 'templates')),
     autoescape=select_autoescape(['html', 'xml'])
 )
-print(os.path.dirname(__file__))
 FileSystemLoader(os.path.join(os.path.dirname(__file__), 'templates')).list_templates()
+
+def datetimeformat(value, format='%d-%m-%Y at %H:%M'):
+    value =  datetime.datetime.fromtimestamp(int(value))
+    return value.strftime(format)
+
+env.filters['datetimeformat'] = datetimeformat
 
 def main():
     for entry in comments:
