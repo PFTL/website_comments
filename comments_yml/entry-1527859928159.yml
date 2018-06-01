@@ -1,0 +1,10 @@
+_id: 2e26fd40-65a0-11e8-9fc7-8dbac274a5e3
+url: blog/implementing-threads-for-measurements
+name: Matthew
+email: 26dfffa01158db576fddda068107c7ec
+website: mattoppenheim.com
+message: "Thanks for the article. For inter-process communication, have a look at the pyzmq library. \r\n\r\nI use the pydispatcher library for inter-thread communication. In my last project I passed pandas dataframes for real time plotting. One thread samples the sensor. The main thread performs real time plotting using pyqtgraph. The two threads communicate using dispatches. The main thread requests sensor data using a dispatch. A new dispatch containing sensor data in a dataframe is sent from the sensor thread to the plotting thread. I put a couple of blogs about this on my website. Search for 'dispatch' or 'zmq' in the search box on www.mattoppenheim.com. I hope that this is of interest."
+date: 1527859928
+timestamp: 1527859928
+sticky: 'false'
+closed: 'false'
