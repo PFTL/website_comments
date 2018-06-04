@@ -1,0 +1,11 @@
+_id: bfe35560-67d2-11e8-80a1-6159756e46d5
+url: blog/implementing-threads-for-measurements
+name: aqui_c
+email: 4b6e0926838beb21057c62aab993615e
+website: 'https://www.pythonforthelab.com'
+message: "Thanks Matthew and Grant for the comments! \r\n\r\nMatthew, I have checked your blog, you have nice examples on different topics! I haven't really tested zmq for communicating between threads, but it seems to be a popular approach. I've checked in one of your examples that you use zmq in combination with Qt. I wonder why you took this approach instead of using signals and slots. \r\n\r\nGrant, thanks for the links. In the application I had in mind (streaming from a camera), caching to disk is not a good option, because the data generation rate is higher than write-to-disk speed. However, this approach can extend the time during which you can acquire from a camera (or any other high-speed acquisition device). That is why knowing how big your buffer could be is of tremendous help, in order to stop the acquisition before an out-of-memory exception. In any case, I will take a better look at your project, since it seems something I could use at some point."
+date: 1528101549
+timestamp: 1528101549
+tags:
+  - comment-subscription
+commentDate: '2018-06-04T08:39:09.858Z'
