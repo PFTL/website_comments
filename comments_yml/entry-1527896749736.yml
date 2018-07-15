@@ -1,0 +1,13 @@
+_id: e98858e0-65f5-11e8-9fc7-8dbac274a5e3
+url: blog/implementing-threads-for-measurements
+name: Grant Jenks
+email: 19597bf4ea8879e5210d6e6025e17111
+website: 'http://www.grantjenks.com/docs/diskcache/'
+message: "Great introduction to threads and processes. Thanks for the writeup.\r\n\r\nYou mention in the \"Limitation of Queues\" section that you were interested in some way to limit the memory use of a queue. I too have had that problem and it's a tricky one. One solution I've found is to use the \"diskcache\" module: http://www.grantjenks.com/docs/diskcache/ The Disk Cache module implements a \"Deque\" data type that can be used for cross-process communication: http://www.grantjenks.com/docs/diskcache/tutorial.html#deque You can also configure exactly how much memory you want to Disk Cache to use by changing a couple settings. The default memory use is 64 megabytes. It won't be quite as fast as \"multiprocessing.Queue\" because all data is serialized to disk, but that persistence is also a feature as you can use much more storage space (gigabytes of disk space).\r\n\r\nI should disclaim: I am the author of Disk Cache. I'd be happy to hear your feedback on the project."
+date: 1527896749
+timestamp: 1527896749
+sticky: 'false'
+closed: 'false'
+tags:
+  - comment-subscription
+commentDate: '2018-06-01T23:45:49.736Z'

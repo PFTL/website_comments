@@ -1,0 +1,11 @@
+_id: 3ab7f460-6a8c-11e8-9030-fbc557955408
+url: blog/documenting-with-sphinx-and-readthedocs
+name: Emmanuel
+email: 5253eb40c92fd6dec4261c09aea7ff27
+website: 'http://nosahama.com'
+message: "Thanks a lot for this awesome article, it's well written and very helpful. \r\n\r\n`python -m doctest -v factorial.py`\r\n\r\nMy question is what does the `-m` do when used with the python command, i see it a lot and tried searching for it, but to no avail. I'd also appreciate if you can also maybe point me to a link where all the possible arguments are shown. \r\n\r\nThanks. :-)"
+date: 1528401115
+name-slug: emmanuel
+timestamp: 1528401115
+tags:
+  - comment-subscription
