@@ -1,0 +1,9 @@
+_id: b72395d0-881a-11e8-9c91-695da0ebd794
+url: blog/learning-not-to-handle-exceptions
+name: jose
+email: c0ee1bdf35ca6d81fe166396eb631b82
+website: ''
+message: >-
+  Excellent article! what about custom-made exceptions using "assert"? (which I
+  think can be very useful to validate data inputs)
+date: 1531650896
