@@ -1,0 +1,7 @@
+_id: 71d018a0-8829-11e8-9c91-695da0ebd794
+url: blog/learning-not-to-handle-exceptions
+name: aqui_c
+email: 4b6e0926838beb21057c62aab993615e
+website: 'https://www.pythonforthelab.com'
+message: "Assert is very useful and very flexible.  However, you end up always raising assertion errors. \r\n\r\nWhat do you mean by custom exceptions using assert?"
+date: 1531657222
