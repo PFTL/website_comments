@@ -1,0 +1,10 @@
+_id: b23bbf40-8d45-11e8-9031-c70b02b75a74
+url: blog/learning-not-to-handle-exceptions
+name: Brad
+email: 4729bf922d2e1cfb777a850a10364f6c
+website: n/a
+message: >-
+  When creating your own exceptions, it is better practice to inherit from
+  Exception, not BaseException.  See
+  https://docs.python.org/3/library/exceptions.html#BaseException
+date: 1532219112
