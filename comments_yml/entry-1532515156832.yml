@@ -1,0 +1,10 @@
+_id: faa982e0-8ff6-11e8-b893-719cb4b450cd
+url: blog/learning-not-to-handle-exceptions
+name: aqui_c
+email: 4b6e0926838beb21057c62aab993615e
+website: 'https://www.pythonforthelab.com'
+message: >-
+  Yes, I agree that the with statement what should have been used here, I just
+  wanted to show how to handle exceptions. I will deal with the with statement
+  in another article.
+date: 1532515156
