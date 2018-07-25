@@ -1,0 +1,7 @@
+_id: 2e770d70-8fef-11e8-b893-719cb4b450cd
+url: blog/learning-not-to-handle-exceptions
+name: Theo
+email: bd0e6ea6d94228cf407059727e22316c
+website: ''
+message: "Thanks for the blog post, always useful! However for working with file, people argue that the best practice was to use the \"with\" statement, which guarantees that the file will be closed. See for example:\r\nhttps://docs.quantifiedcode.com/python-anti-patterns/maintainability/not_using_with_to_open_files.html\r\nhttps://www.pythonforbeginners.com/files/with-statement-in-python\r\n\r\nHowever, it becomes a little bit more difficult to handle exceptions raised during the file opening, see for example:\r\nhttps://stackoverflow.com/questions/713794/catching-an-exception-while-using-a-python-with-statement"
+date: 1532511807
