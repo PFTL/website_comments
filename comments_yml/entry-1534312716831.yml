@@ -1,0 +1,14 @@
+_id: 3fdb88e0-a050-11e8-999e-0f70a11211dd
+url: blog/introduction-to-storing-data-in-files
+name: Jason C
+email: 9c03b935c7f0bbd9f61a96ed8aae82de
+website: ''
+message: >-
+  These are good learning exercises, but im afraid that people will take it as
+  advice! I would never recommend that someone write their own CSV writer/parser
+  as you've described. There's just too many hidden edge cases (quote escaping
+  being just the tip of the iceberg) and too many great existing tools that do a
+  great job. You should at least mention these - CSV.DictReader,
+  pandas.DataFrame.read_csv() and petl.fromcsv() are a few options that are easy
+  to use,  quite powerful, and will save a ton of headaches.
+date: 1534312716
