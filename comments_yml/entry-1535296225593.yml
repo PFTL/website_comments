@@ -1,0 +1,9 @@
+_id: 28cfe8d0-a942-11e8-a35f-f529256716de
+url: blog/mutable-and-immutable-objects
+name: galuszkak
+email: 4d0b82bb22742370ebd6a74ce7974efc
+website: ''
+message: >-
+  For immutable data structures I would recommend Pyrsistent. It's great library
+  and embracing immutability in Python is just breeze with that library.
+date: 1535296225
