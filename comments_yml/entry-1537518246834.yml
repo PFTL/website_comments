@@ -1,0 +1,13 @@
+_id: b4afad10-bd77-11e8-8d8b-834384c9d56e
+url: blog/mutable-and-immutable-objects
+name: aqui_c
+email: 4b6e0926838beb21057c62aab993615e
+website: 'https://www.pythonforthelab.com'
+message: >-
+  The idea is that if you would like to expand a tuple, you would need to create
+  a new one with extra values, while a list can be expanded without duplicating
+  the initial object. This makes lists faster in both ways if you want to append
+  new objects: memory and running. However, if you access the elements often,
+  tuples are more efficient. The balance between one or the other depends on the
+  application.
+date: 1537518246
