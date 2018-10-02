@@ -1,0 +1,7 @@
+_id: 5cd78c40-c630-11e8-a3e5-1590186c2f0d
+url: blog/mutable-and-immutable-objects
+name: nicol biden
+email: 8019f53aa7fbdef4bc85ed1ee1f287f9
+website: 'http://net-informations.com'
+message: "Why are Python strings immutable?\r\n\r\nWhich means a string value cannot be updated . Immutability is a clean and efficient solution to concurrent access. Having immutable variables means that no matter how many times the method is called with the same variable/value, the output will always be the same. Having mutable variables means that calling the same method with the same variables may not guarantee the same output, because the variable can be mutated at any time by another method or perhaps, another thread, and that is where you start to go crazy debugging.\r\n\r\nhttp://net-informations.com/python/iq/immutable.htm"
+date: 1538477165
